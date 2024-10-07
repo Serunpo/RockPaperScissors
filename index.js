@@ -57,31 +57,12 @@ function getComputerChoice(){
 }
 
 //Funtion that will play a single round
-function playRound(playerChoice, computerChoice){
-    
-    
-    if (playerChoice === "Rock" && computerChoice === "Scissors"){
-        console.log("You WIN! Rock beats Scissors");
-        playerScore++;
-    } else if (playerChoice === "Paper" && computerChoice === "Rock"){
-        console.log("You WIN! Paper beats Rock");
-        playerScore++;
-    } else if (playerChoice === "Scissors" && computerChoice === "Paper"){
-        console.log("You WIN! Scissors beats Paper")
-        playerScore++;
-    } else if (playerChoice === computerChoice){
-        console.log("It's a DRAW!")
-    } else {
-        console.log(`You LOSE! ${computerChoice} beats ${playerChoice}.`)
-        computerScore++;
-    }
-        
-}
 
 
 
 function playGame(){
 
+    //Funtion that will play a single round
     function playRound(playerChoice, computerChoice){
     
     
